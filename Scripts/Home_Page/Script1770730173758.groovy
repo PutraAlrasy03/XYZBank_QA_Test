@@ -17,3 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login')
+
+WebUI.click(findTestObject('Page_Home/Page_XYZ Bank/button_Customer Login'))
+
+WebUI.click(findTestObject('Page_Home/Page_XYZ Bank/button_Bank Manager Login'))
+
