@@ -6,11 +6,12 @@
    <UUID>06402fd0-e88e-44c5-aa10-d01de077ed64</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>11.0.0</createdVersion>
-   <freeLicense>false</freeLicense>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>11.0.0</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>C:\Users\diana\Katalon Studio\XYZBank_QA_Test\XYZBank_QA_Test.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
