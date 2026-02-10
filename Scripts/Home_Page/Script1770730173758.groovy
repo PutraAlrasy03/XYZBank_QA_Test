@@ -23,5 +23,3 @@ WebUI.navigateToUrl('https://www.globalsqa.com/angularJs-protractor/BankingProje
 
 WebUI.click(findTestObject('Page_Home/Page_XYZ Bank/button_Customer Login'))
 
-WebUI.click(findTestObject('Page_Home/Page_XYZ Bank/button_Bank Manager Login'))
-
