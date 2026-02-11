@@ -6,7 +6,7 @@
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>a9a1aed0-7b5d-49df-9715-80df2e4e9334</dataFileGUID>
+   <dataFileGUID>b12061a1-edb4-4a5e-bf42-6580a95ea7f7</dataFileGUID>
    <dataSourceUrl>C:\Users\Putra\Downloads\List Customer Name.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
