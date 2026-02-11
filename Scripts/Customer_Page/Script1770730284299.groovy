@@ -1,20 +1,19 @@
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// 1. Call the Base Test Case to open the browser
-WebUI.callTestCase(findTestCase('Home_Page'), [:], FailureHandling.STOP_ON_FAILURE)
+// The Listener automatically opens the browser and navigates to the URL before this runs!
 
-// 2. SELECT 'Hermoine Granger' from the dropdown
-// We use 'selectOptionByLabel' instead of 'click' for dropdown lists.
-// The 'false' at the end means we are not using Regular Expressions (Regex).
-WebUI.selectOptionByLabel(findTestObject('Page_Customer/Page_XYZ Bank/select_---Your Name---       Hermoine GrangerHarry PotterRon WeaslyAlbus DumbledoreNeville Longbottom'), 'Hermoine Granger', false)
+WebUI.click(findTestObject('Page_Home/Page_XYZ Bank/button_Customer Login'))
 
-// 3. Click the Login Button
-// Note: I removed "Object Repository/" from the start of the path because findTestObject automatically looks there.
+// 1. SELECT the name from the dropdown using the VARIABLE
+// Notice we use the variable customerName instead of 'Hermoine Granger'
+WebUI.selectOptionByLabel(findTestObject('Page_Customer/Page_XYZ Bank/select_---Your Name---       Hermoine GrangerHarry PotterRon WeaslyAlbus DumbledoreNeville Longbottom'), customerName, false)
+
+// 2. Click the Login Button
 WebUI.click(findTestObject('Page_Customer/Page_XYZ Bank/button_Login'))
 
-// Optional: Verify that the login worked by checking if the "Welcome" text appears
-WebUI.verifyTextPresent('Welcome Hermoine Granger', false)
+// 3. Verify that the login worked dynamically
+// We use string interpolation to check for "Welcome [Variable]"
+WebUI.verifyTextPresent('Welcome ' + customerName, false)
+
+// The Listener will automatically close the browser after this script finishes!
