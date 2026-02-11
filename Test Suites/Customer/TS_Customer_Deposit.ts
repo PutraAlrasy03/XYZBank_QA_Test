@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>fe1cec6b-6329-4dfc-a518-35f44b1f479b</testSuiteGuid>
    <testCaseLink>
-      <guid>016cca7f-5fe9-4c05-9ec0-d5da05c61c82</guid>
+      <guid>a982664e-2b73-456c-8f8b-3d834810bade</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
@@ -25,7 +25,7 @@
       <testCaseId>Test Cases/Customer_Testcase/Customer_Deposit</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>3c429589-0f9b-4d9e-a7fe-dffd2fe88be4</id>
+         <id>590ba6a0-561d-4ac2-bbc5-c9b2cf274a2c</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,7 +34,7 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>3c429589-0f9b-4d9e-a7fe-dffd2fe88be4</testDataLinkId>
+         <testDataLinkId>590ba6a0-561d-4ac2-bbc5-c9b2cf274a2c</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CustomerName</value>
          <variableId>7424c329-dcf7-41b9-82b0-cbbd2d3229df</variableId>

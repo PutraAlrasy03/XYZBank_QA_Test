@@ -15,10 +15,17 @@
       <guid>0dbc953f-fa56-43cb-a02d-b756a11a2124</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>'Hermoine Granger'</defaultValue>
+         <description></description>
+         <id>d88b9c42-a8c5-45d6-b907-21dabe5ad410</id>
+         <masked>false</masked>
+         <name>customerName</name>
+      </iterationNameVariable>
       <testCaseId>Test Cases/Customer_Testcase/Customer_Page</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>57d5cd5c-ed98-4f6e-89d8-42906ce11f7f</id>
+         <id>ffc6d8ae-05fb-4942-b28f-12ff7c950eb1</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -27,7 +34,7 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>57d5cd5c-ed98-4f6e-89d8-42906ce11f7f</testDataLinkId>
+         <testDataLinkId>ffc6d8ae-05fb-4942-b28f-12ff7c950eb1</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CustomerName</value>
          <variableId>d88b9c42-a8c5-45d6-b907-21dabe5ad410</variableId>
