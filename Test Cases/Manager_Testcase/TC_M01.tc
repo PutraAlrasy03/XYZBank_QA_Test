@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_M01</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dcf479ce-6991-4980-8b23-145fa2a2822f</testCaseGuid>
+</TestCaseEntity>
