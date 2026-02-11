@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_Customer_Login_DataDriven</name>
+   <name>TS_Customer_Deposit</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,15 +10,22 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>5b06e375-d92c-435f-8f03-13914f217ab6</testSuiteGuid>
+   <testSuiteGuid>fe1cec6b-6329-4dfc-a518-35f44b1f479b</testSuiteGuid>
    <testCaseLink>
-      <guid>0dbc953f-fa56-43cb-a02d-b756a11a2124</guid>
+      <guid>016cca7f-5fe9-4c05-9ec0-d5da05c61c82</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Customer_Testcase/Customer_Page</testCaseId>
+      <iterationNameVariable>
+         <defaultValue>'Hermoine Granger'</defaultValue>
+         <description></description>
+         <id>7424c329-dcf7-41b9-82b0-cbbd2d3229df</id>
+         <masked>false</masked>
+         <name>customerName</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/Customer_Testcase/Customer_Deposit</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>57d5cd5c-ed98-4f6e-89d8-42906ce11f7f</id>
+         <id>3c429589-0f9b-4d9e-a7fe-dffd2fe88be4</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -27,10 +34,10 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>57d5cd5c-ed98-4f6e-89d8-42906ce11f7f</testDataLinkId>
+         <testDataLinkId>3c429589-0f9b-4d9e-a7fe-dffd2fe88be4</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CustomerName</value>
-         <variableId>d88b9c42-a8c5-45d6-b907-21dabe5ad410</variableId>
+         <variableId>7424c329-dcf7-41b9-82b0-cbbd2d3229df</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

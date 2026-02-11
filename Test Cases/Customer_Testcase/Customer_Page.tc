@@ -6,12 +6,6 @@
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>ecc66958-9d36-41ea-a4e4-ceea92f44340</testCaseGuid>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>d88b9c42-a8c5-45d6-b907-21dabe5ad410</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>'Hermoine Granger'</defaultValue>
       <description></description>
