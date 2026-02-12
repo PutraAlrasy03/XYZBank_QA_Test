@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Customer_Deposit</name>
+   <name>TC_Customer_Withdraw</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>591193fe-e6d7-4af7-8e99-cc7a412c3732</testCaseGuid>
+   <testCaseGuid>d225e56b-d333-4994-adab-bbff7f9f2878</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f3b1b5ad-df86-4373-a9da-810868e68b87</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Hermoine Granger'</defaultValue>
       <description></description>
-      <id>7424c329-dcf7-41b9-82b0-cbbd2d3229df</id>
+      <id>f3b1b5ad-df86-4373-a9da-810868e68b87</id>
       <masked>false</masked>
       <name>customerName</name>
    </variable>
