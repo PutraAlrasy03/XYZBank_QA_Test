@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS_Customer_Login_DataDriven</name>
+   <name>TS_Manager_Open_Account</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,22 +10,22 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>5b06e375-d92c-435f-8f03-13914f217ab6</testSuiteGuid>
+   <testSuiteGuid>5c0acb8d-56f3-4dc9-86f9-44d0abfbf36c</testSuiteGuid>
    <testCaseLink>
-      <guid>0dbc953f-fa56-43cb-a02d-b756a11a2124</guid>
+      <guid>313f6ae5-7fc7-48a8-883d-3e212ea30d6f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
-         <defaultValue>'Hermoine Granger'</defaultValue>
+         <defaultValue>'Harry'</defaultValue>
          <description></description>
-         <id>d88b9c42-a8c5-45d6-b907-21dabe5ad410</id>
+         <id>33db86f9-f049-4676-9340-a3365b897e3c</id>
          <masked>false</masked>
-         <name>customerName</name>
+         <name>FirstName</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Customer_Testcase/Customer_Page</testCaseId>
+      <testCaseId>Test Cases/Manager_Testcase/TC_M_Open_Account</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>454f8fc6-31e4-4216-ba1a-481cb002bc34</id>
+         <id>ca07b286-9ed7-4057-be58-50ff5048c4ff</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,10 +34,16 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>454f8fc6-31e4-4216-ba1a-481cb002bc34</testDataLinkId>
+         <testDataLinkId>ca07b286-9ed7-4057-be58-50ff5048c4ff</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>CustomerName</value>
-         <variableId>d88b9c42-a8c5-45d6-b907-21dabe5ad410</variableId>
+         <variableId>33db86f9-f049-4676-9340-a3365b897e3c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c9e868fc-4518-44e6-ad05-cc1deccbb3c7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
