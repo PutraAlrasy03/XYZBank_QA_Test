@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Customer_Transactions</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e99c0e1d-f00f-484b-a65e-2a5b646981af</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>838dbb54-8ab6-4364-87d7-6250b10d95f3</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hermoine Granger'</defaultValue>
+      <description></description>
+      <id>838dbb54-8ab6-4364-87d7-6250b10d95f3</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>

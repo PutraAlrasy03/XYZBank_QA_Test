@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Customer_Transcations</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c20e0e69-cd75-4f23-9ff7-4d32e0d76add</testCaseGuid>
+</TestCaseEntity>

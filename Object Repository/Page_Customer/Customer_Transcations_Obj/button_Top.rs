@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Top</name>
+   <tag></tag>
+   <elementGuidId>d3a99509-00e5-4b25-91dc-ec68a941c7b2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>[ng-click=&quot;scrollTop\(\)&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@ng-click = 'scrollTop()']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>91cbd3fa-b1e0-4d3e-8659-4b62fa72cbaa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary</value>
+      <webElementGuid>6f90e063-ed49-498b-9db6-dc051eade612</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-show</name>
+      <type>Main</type>
+      <value>left</value>
+      <webElementGuid>b14d09a1-5bef-47e4-97aa-7e937ed28e19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>scrollTop()</value>
+      <webElementGuid>0af66ffc-710e-4f63-a6a4-e8c5ad5942b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Top</value>
+      <webElementGuid>cc04b2b4-af57-44cb-a44a-78639a22099d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-4e1e7dfb37c6231f802eedb2f21a193d</value>
+      <webElementGuid>ba3dbde1-bd8d-49cb-ba8d-0c65fdfbfc74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@ng-click = 'scrollTop()']</value>
+      <webElementGuid>15f96564-a6b8-4ff2-ad6d-9e534e9cb7e8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@ng-click = 'scrollTop()']</value>
+      <webElementGuid>784acc9b-75ae-455f-8f31-5fd75b0ffca6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Top' or . = 'Top')]</value>
+      <webElementGuid>c2b4bfda-6615-4406-a3c8-4538d07dc5b5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
