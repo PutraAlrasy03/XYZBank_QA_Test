@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Open Account</name>
+   <name>button_Add Customer_1</name>
    <tag></tag>
-   <elementGuidId>5894f8f3-637b-472b-9840-d83da8b25b01</elementGuidId>
+   <elementGuidId>391b18c8-c6db-415d-8653-c42fa1ea254e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[ng-click=&quot;openAccount\(\)&quot;]</value>
+         <key>XPATH</key>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-click = 'openAccount()']</value>
+         <key>CSS</key>
+         <value>.btn.btn-default</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,73 +23,62 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b21953ab-8ba5-470f-af54-bee184f4abeb</webElementGuid>
+      <webElementGuid>6d96a309-4fe1-42b4-a2bc-d2829b6fffc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-class</name>
+      <name>type</name>
       <type>Main</type>
-      <value>btnClass2</value>
-      <webElementGuid>ba8b2cd9-8a55-4269-ab48-c35c3750c1aa</webElementGuid>
+      <value>submit</value>
+      <webElementGuid>246c35f4-60b1-4360-ac0c-c617a9b66321</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-lg tab</value>
-      <webElementGuid>00dd19c3-e6e2-4290-a630-0df1e69816dd</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-click</name>
-      <type>Main</type>
-      <value>openAccount()</value>
-      <webElementGuid>244d10e5-1e5b-41d0-af01-a3febd68952a</webElementGuid>
+      <value>btn btn-default</value>
+      <webElementGuid>b888dfc7-3cf1-4a01-b1bc-22ac62d1169f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Open Account
-		</value>
-      <webElementGuid>521ca8a9-0a67-4811-9993-176cb2c0788a</webElementGuid>
+      <value>Add Customer</value>
+      <webElementGuid>be0904c4-6818-49c9-aab1-90f2011ebb8b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-a63673ceb466b406edc26945bfc97133</value>
-      <webElementGuid>3f0a7f9d-73ee-4799-b6f7-60f540f6e02d</webElementGuid>
+      <value>md5.v1-8aa05ab92fc3b8464df566ac0b5576b0</value>
+      <webElementGuid>9b6b0577-61ed-4c7e-a60d-29f141296a8c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@ng-click = 'openAccount()']</value>
-      <webElementGuid>f8f87285-cea0-449c-a12a-1ee9b2a1e53d</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
+      <webElementGuid>4258b1ee-dfbb-4408-8eb9-8f241f0b2f64</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@ng-click = 'openAccount()']</value>
-      <webElementGuid>e34f53ce-0f6a-497a-b2d3-0c0297f78fa8</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
+      <webElementGuid>b205b10f-b484-4708-8f36-153b40b147b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[(text() = 'Open Account
-		' or . = 'Open Account
-		')]</value>
-      <webElementGuid>e3da81f5-ea36-4214-a8dc-8c2b2816f7b0</webElementGuid>
+      <value>//button[@type = 'submit' and (text() = 'Add Customer' or . = 'Add Customer')]</value>
+      <webElementGuid>d8febc2c-2c84-41ce-864e-dbe56f4d902e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

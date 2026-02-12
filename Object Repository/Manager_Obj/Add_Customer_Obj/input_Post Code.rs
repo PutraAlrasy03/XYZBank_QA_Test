@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Bank Manager Login</name>
+   <name>input_Post Code</name>
    <tag></tag>
-   <elementGuidId>a5012941-4a88-458f-9c50-f18dc4d3124a</elementGuidId>
+   <elementGuidId>2c347411-1257-4105-8933-6f9f557074eb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>[ng-click=&quot;manager\(\)&quot;]</value>
+         <key>XPATH</key>
+         <value>//*[@placeholder = 'Post Code']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@ng-click = 'manager()']</value>
+         <key>CSS</key>
+         <value>[placeholder=&quot;Post\ Code&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,63 +22,71 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>button</value>
-      <webElementGuid>cb93a479-459f-4d7b-876e-57b3d3921e97</webElementGuid>
+      <value>input</value>
+      <webElementGuid>932809b3-4b27-4d68-9d02-2ece6d37ea1c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>btn btn-primary btn-lg</value>
-      <webElementGuid>c0733248-06a7-4677-8379-9dce5dbae1ab</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-click</name>
-      <type>Main</type>
-      <value>manager()</value>
-      <webElementGuid>1db30d3e-ee10-4972-87e0-024d41154be6</webElementGuid>
+      <value>form-control ng-pristine ng-untouched ng-invalid ng-invalid-required</value>
+      <webElementGuid>770819de-fc52-49ee-97bb-b32f61eb049c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>type</name>
       <type>Main</type>
-      <value>Bank Manager Login</value>
-      <webElementGuid>474c5877-2216-4bff-9095-ce106eb16df6</webElementGuid>
+      <value>text</value>
+      <webElementGuid>2e5d8bef-f97e-4418-95eb-c39c426a0e83</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-model</name>
+      <type>Main</type>
+      <value>postCd</value>
+      <webElementGuid>27079b81-11fc-4fb2-a9df-50d83abf3328</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Post Code</value>
+      <webElementGuid>598af470-8712-43ce-8607-cc4cfe82ac17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>parent</name>
       <type>Main</type>
-      <value>md5.v1-0d97fad7cc5249a6b4edfeaefbb65c90</value>
-      <webElementGuid>6b31ed0d-afa6-4287-b5eb-521adb98c0ab</webElementGuid>
+      <value>md5.v1-0af3e940d14cf933a86f18e84fc20d0e</value>
+      <webElementGuid>3c3580c5-31e5-48cc-8fdb-134873bddb37</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@ng-click = 'manager()']</value>
-      <webElementGuid>6137fa5f-d8e7-4015-8b3e-7dc3b5a99da6</webElementGuid>
+      <value>//*[@placeholder = 'Post Code']</value>
+      <webElementGuid>1619134d-1c61-4cf3-945d-46e36afc8251</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//*[@ng-click = 'manager()']</value>
-      <webElementGuid>9674eb1c-ec37-45a8-9732-1fabb0293b6e</webElementGuid>
+      <value>//*[@placeholder = 'Post Code']</value>
+      <webElementGuid>aed9f792-532b-4746-9e34-492dc2a56d53</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[(text() = 'Bank Manager Login' or . = 'Bank Manager Login')]</value>
-      <webElementGuid>c17728cb-8590-4785-9d94-86f31ef003e1</webElementGuid>
+      <value>//input[@type = 'text' and @placeholder = 'Post Code']</value>
+      <webElementGuid>47f75537-730a-4317-ac28-8a0cddf87118</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

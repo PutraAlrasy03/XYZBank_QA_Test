@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_Manager_Add_New_Customer</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>bbb5d9c4-c78e-44cd-a6fb-a0053743b9b3</testSuiteGuid>
+   <testCaseLink>
+      <guid>722d6ff5-c3d9-4194-a8b9-ac03309105dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>'Putra'</defaultValue>
+         <description></description>
+         <id>31bfbad7-5331-4ecd-bb9e-f7b62f3850f3</id>
+         <masked>false</masked>
+         <name>FirstName</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/Manager_Testcase/TC_M02</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>9709db9a-ec6f-4cd8-9a26-c4adad4a66a2</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/New_Customer</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>9709db9a-ec6f-4cd8-9a26-c4adad4a66a2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>FirstName</value>
+         <variableId>31bfbad7-5331-4ecd-bb9e-f7b62f3850f3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9709db9a-ec6f-4cd8-9a26-c4adad4a66a2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>LastName</value>
+         <variableId>e15daf0f-2d75-4d63-92c9-f418135e7429</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9709db9a-ec6f-4cd8-9a26-c4adad4a66a2</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Postode</value>
+         <variableId>4a5687f4-4ae9-42e5-a4ed-d3d925d05bb1</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
