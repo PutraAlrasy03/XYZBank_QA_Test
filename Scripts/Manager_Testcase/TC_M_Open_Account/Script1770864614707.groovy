@@ -1,42 +1,31 @@
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.support.ui.Select
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
 
-// 1. Login & Navigate
-WebUI.click(findTestObject('Manager_Obj/Open_Account_Obj/button_Bank Manager Login'))
+// 1. PRECONDITION: Login (Ensure TC_M01 doesn't open browser if Listener is used)
+WebUI.callTestCase(findTestCase('Manager_Testcase/TC_M01'), [:], FailureHandling.STOP_ON_FAILURE)
+
+// 2. Navigate to Open Account Tab (Don't forget this step!)
 WebUI.click(findTestObject('Manager_Obj/Open_Account_Obj/button_Open Account'))
 
-// --- SMART SELECT START ---
-// This block finds the dropdown, loops through options, and picks the one containing "Harry"
+// 3. Select Customer and Currency
+// Cleaned up the dot, corrected variable name to 'FirstName', and set Regex to 'true'
+WebUI.selectOptionByLabel(findTestObject('Object Repository/Manager_Obj/Open_Account_Obj/select_---Customer Name---       Hermoine GrangerHarry PotterRon WeaslyAlbus DumbledoreNeville Longbottom'), FirstName, false)
 
-// A. Get the dropdown element directly from the browser
-WebElement element = WebUiCommonHelper.findWebElement(findTestObject('Manager_Obj/Open_Account_Obj/select_userSelect'), 30)
-Select dropdown = new Select(element)
-
-// B. Loop through every name in the list
-for (WebElement option : dropdown.getOptions()) {
-	// Check if the current option contains your First Name (e.g. "Harry")
-	if (option.getText().contains(FirstName)) {
-		// Found it! Select it using the full text (e.g. "Harry Potter")
-		dropdown.selectByVisibleText(option.getText())
-		println(">>> SUCCESS: Found and selected " + option.getText())
-		break
-	}
-}
-// --- SMART SELECT END ---
-
-// 2. Select Currency
 WebUI.selectOptionByValue(findTestObject('Manager_Obj/Open_Account_Obj/select_currency'), 'Dollar', false)
 
-// 3. Click Process
+// 4. Click Process
 WebUI.click(findTestObject('Manager_Obj/Open_Account_Obj/button_Process'))
 
-// 4. Verification
+// 5. Verify the Alert Appears
 WebUI.verifyAlertPresent(5)
+
+// 6. Capture and Verify the text
 def actualAlertText = WebUI.getAlertText()
-println(">>> OPEN ACCOUNT ALERT: " + actualAlertText)
+println(">>> ACTUAL ALERT: " + actualAlertText)
 
 WebUI.verifyMatch(actualAlertText, 'Account created successfully with account Number.*', true)
+
+// 7. Close the Alert
 WebUI.acceptAlert()
