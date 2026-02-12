@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_M05</name>
+   <tag></tag>
+   <comment></comment>
+   <origin>WEB_RECORDER</origin>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9b1142e4-8ca9-4867-980e-3bd803b41fca</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f993b32-4531-4138-a7fd-dab4a8bb1312</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Harry'</defaultValue>
+      <description></description>
+      <id>2f993b32-4531-4138-a7fd-dab4a8bb1312</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>

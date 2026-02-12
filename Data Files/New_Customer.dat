@@ -7,11 +7,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>7666e773-5de2-40fe-9a79-818a1f171e53</dataFileGUID>
-   <dataSourceUrl>Data Files/Test Data/New Customer.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Test Data/List Customer Name.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>New Customer</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

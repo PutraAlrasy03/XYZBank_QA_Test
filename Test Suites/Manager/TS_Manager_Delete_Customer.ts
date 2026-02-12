@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS_Manager_Delete_Customer</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>10</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>8dcfc62e-0f9f-4549-9a0b-bce054f79733</testSuiteGuid>
+   <testCaseLink>
+      <guid>53638686-d297-48f6-8aa3-2f4d1f797903</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>'Harry'</defaultValue>
+         <description></description>
+         <id>2f993b32-4531-4138-a7fd-dab4a8bb1312</id>
+         <masked>false</masked>
+         <name>customerName</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/Manager_Testcase/TC_M05</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2ac7dfd6-c8cc-4e3f-934f-2321a778a9e5</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Delete_Customer</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>2ac7dfd6-c8cc-4e3f-934f-2321a778a9e5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>customerName</value>
+         <variableId>2f993b32-4531-4138-a7fd-dab4a8bb1312</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

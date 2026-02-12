@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Delete</name>
+   <tag></tag>
+   <elementGuidId>0eae64ab-41cf-4b30-9817-7911e090e09e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[(@ng-repeat = 'cust in Customers | orderBy:sortType:sortReverse | filter:searchCustomer') and (position() = 1)]//*[@ng-click = 'deleteCust(cust)']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[ng-repeat=&quot;cust\ in\ Customers\ \|\ orderBy\:sortType\:sortReverse\ \|\ filter\:searchCustomer&quot;]:nth-child(1) [ng-click=&quot;deleteCust\(cust\)&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>0423d129-3496-4f7b-bf7e-309c77b9c32a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-click</name>
+      <type>Main</type>
+      <value>deleteCust(cust)</value>
+      <webElementGuid>51436658-2b09-4b4b-9a21-e0edbe3ac6d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Delete</value>
+      <webElementGuid>273cfcf1-7c16-44b2-a149-d476b062b4b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-a386d71c185a20e674c0bcf38a1d3410</value>
+      <webElementGuid>3769bc64-7193-4281-928b-813099db4474</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[(@ng-repeat = 'cust in Customers | orderBy:sortType:sortReverse | filter:searchCustomer') and (position() = 1)]//*[@ng-click = 'deleteCust(cust)']</value>
+      <webElementGuid>5db22c70-5b4d-4754-944a-7fd7bbda495a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[(@ng-repeat = 'cust in Customers | orderBy:sortType:sortReverse | filter:searchCustomer') and (position() = 1)]//*[@ng-click = 'deleteCust(cust)']</value>
+      <webElementGuid>4c8883ae-3c4a-4d4f-befb-1ec024440572</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Delete' or . = 'Delete')]</value>
+      <webElementGuid>da9a2ea2-1ef2-4f43-87a0-f3e9bd3b68f5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
