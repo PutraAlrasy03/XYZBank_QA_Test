@@ -13,24 +13,11 @@
       <value></value>
       <variableId>33db86f9-f049-4676-9340-a3365b897e3c</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>c9e868fc-4518-44e6-ad05-cc1deccbb3c7</variableId>
-   </variableLinks>
    <variable>
-      <defaultValue>'Harry'</defaultValue>
+      <defaultValue>'Harry Potter'</defaultValue>
       <description></description>
       <id>33db86f9-f049-4676-9340-a3365b897e3c</id>
       <masked>false</masked>
       <name>FirstName</name>
-   </variable>
-   <variable>
-      <defaultValue>'Potter'</defaultValue>
-      <description></description>
-      <id>c9e868fc-4518-44e6-ad05-cc1deccbb3c7</id>
-      <masked>false</masked>
-      <name>LastName</name>
    </variable>
 </TestCaseEntity>

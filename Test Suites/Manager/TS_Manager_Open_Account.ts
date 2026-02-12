@@ -16,7 +16,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
-         <defaultValue>'Harry'</defaultValue>
+         <defaultValue>' Harry'</defaultValue>
          <description></description>
          <id>33db86f9-f049-4676-9340-a3365b897e3c</id>
          <masked>false</masked>
@@ -38,12 +38,6 @@
          <type>DATA_COLUMN</type>
          <value>CustomerName</value>
          <variableId>33db86f9-f049-4676-9340-a3365b897e3c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>c9e868fc-4518-44e6-ad05-cc1deccbb3c7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

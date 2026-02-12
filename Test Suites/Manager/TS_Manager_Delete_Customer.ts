@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>customerName</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Manager_Testcase/TC_M05</testCaseId>
+      <testCaseId>Test Cases/Manager_Testcase/TC_M05_Delete_Account</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>2ac7dfd6-c8cc-4e3f-934f-2321a778a9e5</id>
