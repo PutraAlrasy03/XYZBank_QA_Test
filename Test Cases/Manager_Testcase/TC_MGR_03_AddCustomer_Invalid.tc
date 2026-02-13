@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_MGR_03_AddCustomer_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6640a570-7f9d-4621-8ed3-e4f3de2f118f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6c4e30f3-c8f7-41e8-952e-98720a7c58b8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Harry'</defaultValue>
+      <description></description>
+      <id>6c4e30f3-c8f7-41e8-952e-98720a7c58b8</id>
+      <masked>false</masked>
+      <name>FirstName</name>
+   </variable>
+</TestCaseEntity>
