@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CUST_07_Withdraw_Insufficient</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4bad2ac6-224c-4824-8457-daa2ff94ca28</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>843b056e-66f2-4fc4-8865-78e8429fb609</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hermoine Granger'</defaultValue>
+      <description></description>
+      <id>843b056e-66f2-4fc4-8865-78e8429fb609</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>
