@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CUST_01_Login_Valid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ecc66958-9d36-41ea-a4e4-ceea92f44340</testCaseGuid>
+   <variable>
+      <defaultValue>'Hermoine Granger'</defaultValue>
+      <description></description>
+      <id>d88b9c42-a8c5-45d6-b907-21dabe5ad410</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>

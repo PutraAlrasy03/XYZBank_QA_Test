@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>FirstName</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Manager_Testcase/TC_M_Open_Account</testCaseId>
+      <testCaseId>Test Cases/Manager_Testcase/TC_MGR_04_OpenAccount</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>ca07b286-9ed7-4057-be58-50ff5048c4ff</id>
