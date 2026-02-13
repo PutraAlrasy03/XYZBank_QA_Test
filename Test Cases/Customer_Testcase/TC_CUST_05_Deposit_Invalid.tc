@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CUST_05_Deposit_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7b718b8-94cf-48a2-9c1e-447f02c1b080</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b1d1016e-96da-403b-8045-f19eb4676c6d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hermoine Granger'</defaultValue>
+      <description></description>
+      <id>b1d1016e-96da-403b-8045-f19eb4676c6d</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>
