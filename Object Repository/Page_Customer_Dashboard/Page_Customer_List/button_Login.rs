@@ -6,12 +6,16 @@
    <elementGuidId>2590b957-c453-479e-950b-83950d98a480</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'submit' and (text() = 'Login' or . = 'Login')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-default</value>
+         <value>.btn.btn-default</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -23,7 +27,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>78e1e888-f5e2-454c-96bf-08fcbafa9d40</webElementGuid>
+      <webElementGuid>9b029dd3-a483-4dae-bff6-22907cce9741</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -31,7 +35,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-default</value>
-      <webElementGuid>801e5596-7feb-4152-833b-f8ad60cb65aa</webElementGuid>
+      <webElementGuid>5860cfe9-7b1d-4cb9-9dd1-65bdc42fcd8b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -39,7 +43,7 @@
       <name>type</name>
       <type>Main</type>
       <value>submit</value>
-      <webElementGuid>2ac0dfca-c5a2-4934-8e1c-7bcadb7ff395</webElementGuid>
+      <webElementGuid>7934621e-55cb-4cbe-9a8c-947cddce0102</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +51,7 @@
       <name>ng-show</name>
       <type>Main</type>
       <value>custId != ''</value>
-      <webElementGuid>4748201f-0929-43f1-b3dc-a033e5b14244</webElementGuid>
+      <webElementGuid>d1a6fb8e-cdef-45c8-9965-1f2a69acbf5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -55,16 +59,40 @@
       <name>text</name>
       <type>Main</type>
       <value>Login</value>
-      <webElementGuid>fd2c9915-f01b-4c8b-8f3f-b4f2d8a16558</webElementGuid>
+      <webElementGuid>70e768a4-dda5-48aa-971c-928d121efb7f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;container-fluid ng-scope&quot;]/div[@class=&quot;ng-scope&quot;]/div[@class=&quot;borderM box padT20 ng-scope&quot;]/form[@class=&quot;ng-valid ng-dirty ng-valid-parse&quot;]/button[@class=&quot;btn btn-default&quot;]</value>
-      <webElementGuid>11152b91-acf5-4393-8a0a-992108ac98f8</webElementGuid>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
+      <webElementGuid>6247d87b-72cf-4b1b-9901-5d109a77cc6e</webElementGuid>
    </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>parent</name>
+      <type>Main</type>
+      <value>md5.v1-8aa05ab92fc3b8464df566ac0b5576b0</value>
+      <webElementGuid>111d860c-cafa-4bfe-b687-8d26f1472e64</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//*[@class and contains(concat(' ', normalize-space(@class), ' '), ' btn ') and contains(concat(' ', normalize-space(@class), ' '), ' btn-default ')]</value>
+      <webElementGuid>f4b40b6d-1019-4db3-ad4c-f2bb6905c539</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'submit' and (text() = 'Login' or . = 'Login')]</value>
+      <webElementGuid>f373c696-3b91-4113-b97c-c57707dbad74</webElementGuid>
+   </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
@@ -104,13 +132,5 @@
       <type>Main</type>
       <value>//form/button</value>
       <webElementGuid>35f687d5-43a0-451a-9f95-467afe3c474d</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//button[@type = 'submit' and (text() = 'Login' or . = 'Login')]</value>
-      <webElementGuid>7ed94ddd-495b-498c-846f-7421e4ef1ab5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

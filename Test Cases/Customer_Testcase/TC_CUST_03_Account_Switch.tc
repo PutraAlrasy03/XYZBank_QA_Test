@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CUST_01_Login_Valid</name>
+   <name>TC_CUST_03_Account_Switch</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>ecc66958-9d36-41ea-a4e4-ceea92f44340</testCaseGuid>
+   <testCaseGuid>2e31aa3b-1842-473a-a010-862c1f6ddd19</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d88b9c42-a8c5-45d6-b907-21dabe5ad410</variableId>
+      <variableId>f181f1c3-73d9-46f6-85c8-7bbadf3897af</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Hermoine Granger'</defaultValue>
+      <defaultValue>['Hermoine Granger', 'Harry Potter', 'Ron Weasly', 'Albus Dumbledore', 'Neville Longbottom']</defaultValue>
       <description></description>
-      <id>d88b9c42-a8c5-45d6-b907-21dabe5ad410</id>
+      <id>f181f1c3-73d9-46f6-85c8-7bbadf3897af</id>
       <masked>false</masked>
-      <name>customerName</name>
+      <name>expectedNames</name>
    </variable>
 </TestCaseEntity>
