@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CUST_02_Account_Display</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88929fcc-5e6f-4872-be0d-39e3053b7068</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>549ff41b-2547-417b-ad2b-c0395a0c8843</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hermoine Granger'</defaultValue>
+      <description></description>
+      <id>549ff41b-2547-417b-ad2b-c0395a0c8843</id>
+      <masked>false</masked>
+      <name>customerName</name>
+   </variable>
+</TestCaseEntity>
