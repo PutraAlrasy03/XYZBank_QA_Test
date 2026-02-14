@@ -19,17 +19,17 @@ String initialBalance = WebUI.getText(findTestObject('Page_Customer_Dashboard/Pa
 println(">>> INITIAL BALANCE: \$" + initialBalance)
 
 // 2. NAVIGATE TO DEPOSIT TAB
-WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_List/button_Deposit'))
-WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_List/input_amount'), 5)
+WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/button_Deposit'))
+WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/input_amount'), 5)
 
 
 // --- SCENARIO A: EMPTY DEPOSIT (HTML5 Validation) ---
 println(">>> TESTING SCENARIO A: Empty Deposit")
-WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_List/input_amount'), '')
-WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_List/button_Deposit_1'))
+WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/input_amount'), '')
+WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/button_Deposit_1'))
 
 // 🚀 Capture the HTML5 popup just like we did in the Manager test!
-String validationMsg = WebUI.getAttribute(findTestObject('Page_Customer_Dashboard/Page_Customer_List/input_amount'), 'validationMessage')
+String validationMsg = WebUI.getAttribute(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/input_amount'), 'validationMessage')
 println(">>> BROWSER POPUP SAYS: " + validationMsg)
 
 // Verify the popup text matches what we expect
@@ -41,8 +41,8 @@ WebUI.verifyTextNotPresent('Deposit Successful', false, FailureHandling.STOP_ON_
 
 // --- SCENARIO B: NEGATIVE DEPOSIT ---
 println(">>> TESTING SCENARIO B: Negative Deposit (-500)")
-WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_List/input_amount'), '-500')
-WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_List/button_Deposit_1'))
+WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/input_amount'), '-500')
+WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_Deposit/button_Deposit_1'))
 
 // Verify success text did NOT appear (Negative numbers usually bypass HTML5 but fail in the backend)
 WebUI.verifyTextNotPresent('Deposit Successful', false, FailureHandling.STOP_ON_FAILURE)
