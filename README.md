@@ -51,24 +51,6 @@ The following modules were covered:
 - Groovy-based scripting
 - Built-in WebUI keywords
 
-### Framework Design
-The project follows a modular and structured layout:
-
-Test Cases/
-├── Common_Utilities/
-├── Customer_Testcase/
-└── Manager_Testcase/
-
-Object Repository/
-├── Page_Customer_Dashboard/
-├── Page_Manager_Dashboard/
-└── Page_Home/
-
-Test Suites/
-├── Customer/
-└── Manager/
-
-
 ### Design Principles Applied
 - Reusable login logic
 - Separation of Customer and Manager flows
