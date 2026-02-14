@@ -125,14 +125,6 @@ This solution addresses:
 - Clean modular organization
 - Reusability and maintainability
 
----
-
-## 👤 Candidate Information
-
-QA Automation Assessment Submission  
-Prepared as part of technical evaluation.
-
----
 
 ## ✅ Status
 
