@@ -1,18 +1,35 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.model.FailureHandling
 
-// The Listener automatically opens the browser and navigates to the URL!
+// ===================================================================
+// Test Case ID: TC_CUST_01_Login_Valid
+// Description: Verify that a valid user can log in successfully.
+//              (Uses Data-Driven Testing via 'customerName' variable)
+// ===================================================================
 
-// 1. Click the Initial "Customer Login" Button
+// NOTE: Browser Open/Navigate is handled automatically by the Test Listener.
+
+// 1. NAVIGATE TO CUSTOMER LOGIN
 WebUI.click(findTestObject('Page_Home/button_Customer Login'))
 
-// 2. Select the name from the dropdown using the VARIABLE (linked to your Excel file)
-WebUI.selectOptionByLabel(findTestObject('Page_Customer_Dashboard/Page_Customer_List/select_---Your Name---       Hermoine GrangerHarry PotterRon WeaslyAlbus DumbledoreNeville Longbottom'), customerName, false)
 
-// 3. Click the Login Button
+// 2. SELECT USER DYNAMICALLY
+// Wait for the dropdown to be ready (Best Practice)
+WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_List/select_userSelect'), 5)
+
+// Select the name using the 'customerName' variable (linked to Excel)
+WebUI.selectOptionByLabel(findTestObject('Page_Customer_Dashboard/Page_Customer_List/select_userSelect'), customerName, false)
+
+
+// 3. CLICK LOGIN
 WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_List/button_Login'))
 
-// 4. Verify that the login worked dynamically
+
+// 4. VERIFY LOGIN SUCCESS
+// Verify that the Welcome message appears with the correct name
 WebUI.verifyTextPresent('Welcome ' + customerName, false)
 
-// The Listener will automatically close the browser after this finishes!
+println(">>> TEST PASSED: Successfully logged in as " + customerName)
+
+// NOTE: Browser Close is handled automatically by the Test Listener.
