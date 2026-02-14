@@ -2,129 +2,182 @@
 
 ## 📋 Project Overview
 
-This repository contains manual and automated test coverage for the GlobalSQA Banking Project application:
+This repository contains **manual and automated test coverage** for the **GlobalSQA Banking Project** application:
 
-https://www.globalsqa.com/angularJs-protractor/BankingProject
+🔗 [https://www.globalsqa.com/angularJs-protractor/BankingProject](https://www.globalsqa.com/angularJs-protractor/BankingProject)
 
-The objective of this assessment is to validate core banking functionalities, ensure data integrity, and demonstrate structured automation framework design using Katalon Studio.
+The purpose of this assessment is to validate core banking functionalities, ensure data integrity, and demonstrate a **well-structured automation framework** implemented using **Katalon Studio**.
 
 ---
 
 ## 🎯 Scope of Testing
 
-The following modules were covered:
-
 ### 👤 Customer Module
-- Login (Valid)
-- Account Display Verification
-- Account Switching
-- Deposit (Valid & Invalid)
-- Withdraw (Valid & Insufficient Balance)
-- Transaction History
-- Transaction Record Validation (Credit/Debit/Amount/Timestamp)
-- Data Persistence (Logout & Refresh)
+
+* Login (Valid)
+* Account Display Verification
+* Account Switching
+* Deposit
+
+  * Valid
+  * Invalid
+* Withdraw
+
+  * Valid
+  * Insufficient Balance
+* Transaction History
+* Transaction Record Validation
+
+  * Type (Credit / Debit)
+  * Amount
+  * Timestamp
+* Data Persistence
+
+  * After Logout
+  * After Page Refresh
 
 ### 👨‍💼 Manager Module
-- Login
-- Add Customer (Valid & Invalid)
-- Open Account
-- Search Customer
-- Delete Customer
+
+* Login
+* Add Customer
+
+  * Valid
+  * Invalid
+* Open Account
+* Search Customer
+* Delete Customer
 
 ---
 
 ## 🧪 Test Coverage Highlights
 
-- Positive and Negative scenarios
-- Data validation and integrity checks
-- Transaction record verification (type, amount, timestamp)
-- Data persistence across sessions
-- Structured reusable test cases
-- Data-driven testing (where applicable)
+* Positive and negative test scenarios
+* Input validation and error handling
+* Transaction integrity verification
+* Data persistence across sessions
+* Clear separation of Customer and Manager flows
+* Reusable and maintainable test cases
+* Data-driven testing where applicable
 
 ---
 
 ## 🛠 Automation Framework
 
-### Tool Used
-- **Katalon Studio**
-- Groovy-based scripting
-- Built-in WebUI keywords
+### Tools & Technologies
 
-### Design Principles Applied
-- Reusable login logic
-- Separation of Customer and Manager flows
-- Clear naming convention (TC_CUST_XX / TC_MGR_XX)
-- Dynamic object handling where necessary
-- Minimal duplication
+* **Katalon Studio**
+* Groovy-based scripting
+* Built-in WebUI keywords
+
+### Framework Design Principles
+
+* Reusable common utilities
+* Modular test case structure
+* Clear naming convention:
+
+  * `TC_CUST_XX_*` for Customer test cases
+  * `TC_MGR_XX_*` for Manager test cases
+* Logical grouping via Test Suites
+* Minimal duplication and improved maintainability
+
+---
+
+## 📂 Project Structure Overview
+
+* **Test Cases**
+
+  * `Common_Utilities`
+  * `Customer_Testcase`
+  * `Manager_Testcase`
+* **Object Repository**
+
+  * Page-based object organization
+* **Test Suites**
+
+  * Customer transaction suite
+  * Manager operation suites
+  * Full regression suite
+* **Data Files**
+
+  * Customer and account data for data-driven execution
 
 ---
 
 ## 📊 Manual Test Cases
 
-Manual test cases were created in Excel format including:
+Manual test cases were documented in Google Sheets and include:
 
-- Test Case ID
-- Description
-- Preconditions
-- Test Steps
-- Expected Result
-- Actual Result
-- Priority
-- Automation Feasibility
+* Test Case ID
+* Test Description
+* Preconditions
+* Test Steps
+* Expected Result
+* Actual Result
+* Priority
+* Automation Feasibility
 
-The test cases comprehensively cover functional, validation, and data integrity scenarios.
+🔗 **Manual Test Case Document:**
+[https://docs.google.com/spreadsheets/d/1GFQkwAv8OfXHHFQyxVPdsKXY0EOePtQaEKYu_Ph4Lxs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1GFQkwAv8OfXHHFQyxVPdsKXY0EOePtQaEKYu_Ph4Lxs/edit?usp=sharing)
+
+These test cases comprehensively cover functional flows, validation scenarios, and data integrity checks.
 
 ---
 
 ## 🔄 Automation Coverage
 
-The following key functionalities were automated:
+The following key features have been automated:
 
-- Transaction Handling (Deposit / Withdraw / History)
-- Add Customer
-- Open Account
-- Data Persistence Validation
-
-Automation exceeds the minimum requirement of two key features.
+* Customer Transactions (Deposit / Withdraw / Transaction History)
+* Add Customer
+* Open Account
+* Search and Delete Customer
+* Data Persistence Validation
 
 ---
 
 ## 📌 Key Validations Implemented
 
-- Balance updates correctly after deposit/withdraw
-- Withdrawal restriction when insufficient funds
-- Transaction history records correct:
-  - Type (Credit/Debit)
-  - Amount
-  - Timestamp
-- Customer data persists after logout and refresh
-- Validation alerts for invalid inputs
-- Confirmation alerts for successful operations
+* Balance updates correctly after deposit and withdrawal
+* Withdrawal is blocked when balance is insufficient
+* Transaction history records correct:
+
+  * Transaction type
+  * Amount
+  * Timestamp
+* Customer data persists after logout and page refresh
+* Validation alerts appear for invalid inputs
+* Confirmation alerts appear for successful operations
 
 ---
 
-## ▶ How to Execute
+## ▶ How to Execute Tests
 
-1. Open project in Katalon Studio
-2. Select desired Test Suite:
-   - `TS_CUST_01_Customer_Transaction`
-   - `TS_MGR_01_Manager_Operations`
-   - `TS_MGR_02_Search_and_Delete_Operations`
-3. Execute in preferred browser
+1. Open the project in **Katalon Studio**
+2. Navigate to **Test Suites**
+3. Execute one of the following:
+
+   * `TS_CUST_01_Customer_Transaction`
+   * `TS_MGR_01_Manager_Operations`
+   * `TS_MGR_02_Search_and_Delete_Operations`
+
+### 🔁 Full Regression Execution
+
+To run **all automated test cases**, execute:
+
+```
+TS_FULL_REGRESSION
+```
 
 ---
 
 ## 📈 Evaluation Criteria Alignment
 
-This solution addresses:
+This project demonstrates:
 
-- Comprehensive functional coverage
-- Attention to data validation
-- Structured automation framework
-- Clean modular organization
-- Reusability and maintainability
-
-
+* Comprehensive functional test coverage
+* Strong focus on data validation and integrity
+* Clean, modular automation framework
+* Reusable and maintainable test design
+* Clear traceability between manual and automated tests
 
 
