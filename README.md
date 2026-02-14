@@ -1,4 +1,4 @@
-# QA Automation Assessment – Banking Project
+# QA Automation – Banking Project
 
 ## 📋 Project Overview
 
