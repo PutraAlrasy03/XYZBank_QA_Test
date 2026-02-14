@@ -39,5 +39,11 @@
          <value>CustomerName</value>
          <variableId>33db86f9-f049-4676-9340-a3365b897e3c</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>62f5ac06-26d0-4fcb-ae13-9e820f8bf6b1</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -13,11 +13,24 @@
       <value></value>
       <variableId>33db86f9-f049-4676-9340-a3365b897e3c</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>62f5ac06-26d0-4fcb-ae13-9e820f8bf6b1</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Harry Potter'</defaultValue>
       <description></description>
       <id>33db86f9-f049-4676-9340-a3365b897e3c</id>
       <masked>false</masked>
       <name>FirstName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dollar'</defaultValue>
+      <description></description>
+      <id>62f5ac06-26d0-4fcb-ae13-9e820f8bf6b1</id>
+      <masked>false</masked>
+      <name>Currency</name>
    </variable>
 </TestCaseEntity>

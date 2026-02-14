@@ -6,49 +6,54 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+// ===================================================================
+// Test Case ID : TC_MGR_05_SearchAndDeleteCustomer
+// Description  : 1. Search for customer by name.
+//                2. Verify search result accuracy.
+//                3. Delete customer and verify they are removed.
+// ===================================================================
 
-// 1. PRECONDITION: Login
+// 1. PRECONDITION: Login as Bank Manager
 WebUI.callTestCase(findTestCase('Manager_Testcase/TC_MGR_01_Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 // 2. NAVIGATE: Go to the 'Customers' list
 WebUI.click(findTestObject('Page_Manager_Dashboard/Page_CustomersList/button_Customers'))
 
-// 3. SEARCH: Type the name
+// 3. SEARCH: Type the customer name
+WebUI.waitForElementVisible(findTestObject('Page_Manager_Dashboard/Page_CustomersList/input_Search Customer'), 10)
 WebUI.setText(findTestObject('Page_Manager_Dashboard/Page_CustomersList/input_Search Customer'), customerName)
 
-// --- CRITICAL QA STEP 1: VERIFY RESULT BEFORE DELETING ---
+// --- STEP 1: VERIFY RESULT BEFORE DELETING ---
 
-// A. Wait a moment for the table to filter
-WebUI.delay(2)
+// Define the object for the First Name cell in the first filtered row
+TestObject firstCell = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//table/tbody/tr[1]/td[1]')
 
-// B. Define the object for the "First Row, First Name Cell"
-// (This XPath //tbody/tr[1]/td[1] always finds the first name in the first row)
-TestObject firstCell = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//tbody/tr[1]/td[1]')
+// Explicit wait for the filtered name to appear
+WebUI.waitForElementPresent(firstCell, 5)
 
-// C. Verify the text in that cell matches "Harry"
 String actualName = WebUI.getText(firstCell)
-WebUI.verifyMatch(actualName, customerName, false)
+println(">>> [SEARCH VERIFICATION] Expected: ${customerName} | Actual: ${actualName}")
 
-println(">>> VERIFICATION PASSED: Found " + actualName + " in the search results.")
+// Verify the search actually found the correct person
+WebUI.verifyMatch(actualName, customerName, false, FailureHandling.STOP_ON_FAILURE)
 
-// ---------------------------------------
+// --- STEP 2: ACTION - DELETE ---
 
-// 4. ACTION: Delete the customer
-// (We use the Delete button specifically for the first row)
-TestObject deleteButton = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//tbody/tr[1]/td[5]/button')
+// Define the Delete button for that specific row
+TestObject deleteButton = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//table/tbody/tr[1]/td[5]/button')
+
 WebUI.click(deleteButton)
+println(">>> [ACTION] Clicked Delete for ${customerName}.")
 
-// --- CRITICAL QA STEP 2: VERIFY THE DELETION ---
+// --- STEP 3: VERIFY DELETION ---
 
-// A. Wait for the table to refresh
+// Small delay to allow Angular table to update its DOM
 WebUI.delay(2)
 
-// B. Create a dynamic object that looks for the name "Harry" anywhere in the table
-// XPath meaning: Find any cell (td) that contains the text 'Harry'
-TestObject deletedName = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//td[normalize-space()='" + customerName + "']")
+// Create a dynamic object to search for the name anywhere in the table
+TestObject deletedNameObj = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//td[text()='" + customerName + "']")
 
-// C. Verify that this object is NO LONGER PRESENT
-// If "Harry" is still there, this step will FAIL (which is what we want!)
-WebUI.verifyElementNotPresent(deletedName, 5)
+// Verify the name is NO LONGER in the table
+WebUI.verifyElementNotPresent(deletedNameObj, 5)
 
-println(">>> SUCCESS: " + customerName + " has been successfully deleted and is gone from the list!")
+println(">>> [SUCCESS] ${customerName} has been wiped from the database.")

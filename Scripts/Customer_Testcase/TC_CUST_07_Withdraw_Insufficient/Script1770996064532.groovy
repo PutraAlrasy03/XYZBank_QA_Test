@@ -6,38 +6,54 @@ import com.kms.katalon.core.model.FailureHandling
 // ===================================================================
 // Test Case ID: TC_CUST_07_Withdraw_Insufficient
 // Description: Verify system rejects withdrawals greater than the
-//              current balance and shows the correct error message.
+//              current balance (Dynamic Calculation).
 // ===================================================================
 
-// 1. PRECONDITION: Log in dynamically
+// 1. PRECONDITION: LOGIN
 WebUI.callTestCase(findTestCase('Customer_Testcase/TC_CUST_01_Login_Valid'),
 	[('customerName') : customerName], FailureHandling.STOP_ON_FAILURE)
 
-// Capture the INITIAL balance before attempting the hack
+
+// 2. CAPTURE INITIAL BALANCE
 WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_List/balance_amount'), 5)
 String initialBalance = WebUI.getText(findTestObject('Page_Customer_Dashboard/Page_Customer_List/balance_amount'))
 println(">>> INITIAL BALANCE: \$" + initialBalance)
 
-// 2. NAVIGATE TO WITHDRAWAL TAB
+
+// 3. CALCULATE EXCESSIVE AMOUNT (Balance + 100)
+// Convert string "500" to integer 500
+int balanceValue = Integer.parseInt(initialBalance)
+
+// Add 100 to make it definitely insufficient
+int excessiveAmount = balanceValue + 100
+String withdrawalInput = String.valueOf(excessiveAmount)
+
+println(">>> TEST DATA GENERATED: Current Balance is " + initialBalance + ". Attempting to withdraw: " + withdrawalInput)
+
+
+// 4. NAVIGATE TO WITHDRAWAL TAB
 WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/button_Withdrawl'))
 
-// Angular needs a split second to change the tab from Deposit to Withdraw
+// Angular needs a split second to change the tab
 WebUI.delay(1)
 
-// 3. ACTION: Attempt to withdraw $999,999
+
+// 5. ATTEMPT THE HACK
 WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/input_amount'), 5)
-WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/input_amount'), '999999')
+WebUI.setText(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/input_amount'), withdrawalInput)
 
 WebUI.click(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/button_Withdraw'))
 
-// 4. VERIFICATION 1: Check for the exact failure object
-// We use your captured object to prove the exact error element is visible!
-WebUI.waitForElementVisible(findTestObject('Object Repository/Page_Customer_Dashboard/Page_Customer_Withdraw/span_Transaction Failed'), 5)
-WebUI.verifyElementVisible(findTestObject('Object Repository/Page_Customer_Dashboard/Page_Customer_Withdraw/span_Transaction Failed'), FailureHandling.STOP_ON_FAILURE)
+
+// 6. VERIFY ERROR MESSAGE
+// We verify that the specific error object appears
+WebUI.waitForElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/span_Transaction Failed'), 5)
+WebUI.verifyElementVisible(findTestObject('Page_Customer_Dashboard/Page_Customer_Withdraw/span_Transaction Failed'), FailureHandling.STOP_ON_FAILURE)
 
 println(">>> VERIFIED: System displayed the correct 'Transaction Failed' message.")
 
-// 5. VERIFICATION 2: Ensure the money was NOT stolen!
+
+// 7. VERIFY SECURITY (Balance Check)
 // Give the app a second to settle
 WebUI.delay(1)
 String finalBalance = WebUI.getText(findTestObject('Page_Customer_Dashboard/Page_Customer_List/balance_amount'))
